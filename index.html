@@ -19,6 +19,23 @@ p3 {
 
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 20px 20px 20px;
+  padding: 10px;
+  
+}
+
 </style>
 
 <h1>Jack's Web Development Blog</h1>
@@ -62,5 +79,63 @@ There seems to be a wealth of resources for HTML and CSS online, which have been
 
 <h3>Blog 3 - September 19 2021</h3>
 
+<p> This week we got more in depth into different layouts in html. These layouts were suprisingly similar, including
+    many of the same features and concepts, to Java Swing, which I have experience using in CS 159. The default layout,
+    flow, which moves elements from left to right within a container, was intuitive to figure out.
+
+    Here is an example of flex layout which can have its layout changed using its <p2>flex-direction</p2> attribute.
+</p>
+
+<div class ="container">
+
+
+    <a> &#x2740 </a>
+    <a> &#x2740 </a>
+    <a> &#x2740 </a>
+    <a> &#x2740 </a>
+    <a> &#x2740 </a>
+    <a> &#x2740 </a>
+    <a> &#x2740 </a>
+    <a> &#x2740 </a>
+    <a> &#x2740 </a>
+
+</div>
+
+<div class ="container2">
+
+    <a> &#x2740 </a>
+    <a> &#x2740 </a>
+    <a> &#x2740 </a>
+    <a> &#x2740 </a>
+    <a> &#x2740 </a>
+    <a> &#x2740 </a>
+    <a> &#x2740 </a>
+    <a> &#x2740 </a>
+    <a> &#x2740 </a>
+
+</div>
+
+<p>I also researched grid layout, which is another mostly intuitive layout that makes it easy to organize 
+elements that need to be in rows and columns. Here is an example of a 3 by 3 grid - </p>
+
+<div class ="wrapper">
+
+    <a> &#x2740 </a>
+    <a> &#x2740 </a>
+    <a> &#x2740 </a>
+    <a> &#x2740 </a>
+    <a> &#x2740 </a>
+    <a> &#x2740 </a>
+    <a> &#x2740 </a>
+    <a> &#x2740 </a>
+    <a> &#x2740 </a>
+
+</div>
+
+<p>This example uses <p2>  grid-template-columns: 20px 20px 20px; </p2>, which, in one line,
+    sets the number of columns and the size of each grid. Each of these layouts can use the <p2>justify-content</p2> property to easily 
+    set the positioning of items within the container, such as <p2>space-between</p2> which will create space between items, and which
+    will center items within the container. So far, most of these layouts and their associated properties are easy to work with, although
+    parent and child relationships are a bit tricky but can be figured out.
 
 </html>
